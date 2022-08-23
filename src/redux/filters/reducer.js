@@ -1,7 +1,7 @@
 import { initialState } from "./initialState";
 import { COLORCHANGED, STATUSCHANGED } from './actionTypes'
 
-export const reducer = (state = initialState, action) => {
+const reducer = (state = initialState, action) => {
     switch (action) {
         case STATUSCHANGED:
             return {
@@ -36,3 +36,5 @@ export const reducer = (state = initialState, action) => {
             return state;
     }
 }
+
+export default reducer

@@ -6,7 +6,7 @@ const nextTodoId = (todos) => {
     return maxId + 1
 }
 
-export const reudcer = (state = initialState, action) => {
+const reducer = (state = initialState, action) => {
     switch (action.type) {
         case ADDED:
             return [
@@ -57,3 +57,5 @@ export const reudcer = (state = initialState, action) => {
             return state
     }
 }
+
+export default reducer
